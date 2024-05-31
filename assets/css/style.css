@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* Utilidades */
+
 :root {
   --clr-primary: #e02d2d;
   --clr-black: #191919;
@@ -30,6 +32,21 @@
 
 .w-100 {
   width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem 1.5rem;
+}
+
+#section > h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+
+  text-transform: uppercase;
 }
 
 /* Header */
@@ -68,10 +85,10 @@ header h1 {
 /* Home*/
 
 #home {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   height: 700px;
+
+  padding: 0;
 }
 
 .home-cta {
@@ -112,22 +129,10 @@ header h1 {
 /* Sobre */
 
 #sobre {
-  display: flex;
-  flex-direction: column;
   gap: 1rem;
 
   background-color: var(--clr-black);
   color: var(--clr-white);
-
-  padding: 2rem 1.5rem;
-}
-
-#sobre > h2 {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 150%;
-
-  text-transform: uppercase;
 }
 
 #sobre > img {
@@ -139,4 +144,33 @@ header h1 {
   gap: 1.5rem;
 
   width: 100%;
+}
+
+/* Projetos */
+
+#projetos {
+  gap: 1.5rem;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  padding: 1.25rem;
+  border-radius: 4px;
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card > h3 {
+  font-size: 18px;
+  font-weight: 500;
 }
